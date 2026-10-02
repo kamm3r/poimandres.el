@@ -1,4 +1,4 @@
-;;; poimandres-theme.el --- Poimandres dark theme -*- lexical-binding: t; -*-
+;;; poimandres-storm-theme.el --- Poimandres storm theme -*- lexical-binding: t; -*-
 
 ;; Author: kamm3r <https://github.com/kamm3r>
 ;; URL: https://github.com/kamm3r/poimandres.el
@@ -6,14 +6,14 @@
 ;; Package-Requires: ((emacs "25.1"))
 
 ;;; Commentary:
-;; Emacs port of the default dark variant of the Poimandres VS Code theme
+;; Emacs port of the storm variant of the Poimandres VS Code theme
 ;; (https://github.com/drcmda/poimandres-theme).  Mint marks strings,
 ;; constants, and builtins; blue marks names; pink marks errors; and
 ;; pale yellow marks warnings.
 
 ;;; Code:
 
-(deftheme poimandres "Poimandres dark theme.")
+(deftheme poimandres-storm "Poimandres storm theme.")
 
 (eval-and-compile
   (let ((load-path
@@ -24,13 +24,13 @@
                load-path)))
     (require 'poimandres-common)))
 
-(poimandres-theme-set-faces 'poimandres)
+(poimandres-theme-set-faces 'poimandres-storm)
 
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'poimandres)
+(provide-theme 'poimandres-storm)
 
-;;; poimandres-theme.el ends here
+;;; poimandres-storm-theme.el ends here
